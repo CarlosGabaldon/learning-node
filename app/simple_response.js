@@ -4,9 +4,13 @@ exports.body = function() {
 };
 
 exports.contentType = function() {
-  return 'text/plain'
+  return 'text/plain';
 };
 
 exports.authorization = function() {
-  return 'Basic'
+  return 'Basic';
+};
+
+exports.respondTo = function (request, response) {
+  return "";
 };

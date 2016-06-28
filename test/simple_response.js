@@ -14,4 +14,8 @@ describe("Simple response object", function() {
     expect(simple_response.authorization()).to.equal('Basic');
   });
 
+  it("should return response function", function() {
+    expect(typeof simple_response.respondTo).to.equal("function");
+  });
+
 });
