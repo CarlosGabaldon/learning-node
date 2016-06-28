@@ -1,0 +1,27 @@
+{
+  "name": "learning-node",
+  "version": "1.0.0",
+  "description": "Simple application for exploring various features of Node and doing BDD with JavaScript",
+  "main": "simple_server.js",
+  "directories": {
+    "test": "test",
+    "app": "app"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies" : {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosGabaldon/learning-node.git"
+  },
+  "author": "Carlos Gabaldon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosGabaldon/learning-node/issues"
+  },
+  "homepage": "https://github.com/CarlosGabaldon/learning-node#readme"
+}
