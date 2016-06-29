@@ -1,16 +1,19 @@
-exports.body = function() {
-  return 'Welcome to Node.js\n';
+const SimpleResponse = exports;
 
+SimpleResponse.body = function() {
+  return 'Welcome to Node.js\n';
 };
 
-exports.contentType = function() {
+SimpleResponse.contentType = function() {
   return 'text/plain';
 };
 
-exports.authorization = function() {
+SimpleResponse.authorization = function() {
   return 'Basic';
 };
 
-exports.respondTo = function (request, response) {
-  return "";
+SimpleResponse.respondTo = function (request, response) {
+  response.statusCode = 200;
+  response.setHeader('Content-Type', SimpleResponse.contentType());
+  response.end(SimpleResponse.body());
 };
