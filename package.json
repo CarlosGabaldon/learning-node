@@ -8,11 +8,11 @@
     "app": "app"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "/usr/local/lib/node_modules/mocha/bin/mocha  --reporter spec"
   },
-  "dependencies" : {
-    "mocha": "*",
-    "chai": "*"
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   },
   "repository": {
     "type": "git",

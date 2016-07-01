@@ -23,9 +23,16 @@ Test: Run npm -v. The version should be higher than 2.1.8.
 Install testing framework, and an expectation library called Chai that serves as a nice replacement for Node's standard assert function.
 
 ```
-$ npm install mocha --save
-$ npm install chai --save
+$ cd
+$ npm install -g mocha
+$ npm install -g chai
 
+```
+Add global node modules path to .bash_profile
+
+```
+# Node
+export NODE_PATH=/usr/local/lib/node_modules
 ```
 
 Run Tests
