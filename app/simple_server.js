@@ -6,7 +6,8 @@ const simple_response = require('../app/simple_response')
 const server = http.createServer(simple_response.respondTo);
 
 server.listen(port, hostname, function() {
-  console.log('Server running at http://' + hostname + ':' + port + '/');
+  console.log('Server started at http://' + hostname + ':' + port + '/');
+  console.log("Use 'control+c' to quit server")
 });
 
 server.on('request', function(request, response) {
